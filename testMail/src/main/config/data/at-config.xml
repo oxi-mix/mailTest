@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <main>
+		<use-wait-after-click>true</use-wait-after-click>
+		<wait-duration-ms>5000</wait-duration-ms>
+		<start-page>https://mail.ru/</start-page>
+		<portal-page>https://e.mail.ru/login?from=portal</portal-page>
+		<account-page>https://account.mail.ru/login?email=</account-page>
+		
+		<login>oksana.mixeeva.00@mail.ru</login>
+		<pass>qwerty123456</pass>
+
+		<letter>qwertyuiopasdfghjklzxcvbnm1234456789</letter>
+		<receiver-address>mail@qwert.ru</receiver-address>
+	  
+	</main>
+</configuration>
