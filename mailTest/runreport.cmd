@@ -1,0 +1,1 @@
+start .\target\site\thucydides\index.html 

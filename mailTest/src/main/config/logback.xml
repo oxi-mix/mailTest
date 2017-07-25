@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+
+    <appender name="ACTIVITYLOG" class="ch.qos.logback.core.FileAppender">
+        <file>./test-activity.log</file>
+<encoder>
+        <charset>UTF-8</charset>            
+        <pattern>[%thread] %-5level %logger{35} - %msg%n</pattern>
+</encoder>
+
+<!--
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{ISO8601} [%t] %-5p %c - %m%n</pattern>
+        </layout>
+-->
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoding>UTF-8</encoding>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{ISO8601} [%t] %-5p %c - %m%n</pattern>
+        </layout>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="ACTIVITYLOG" />
+    </root>
+</configuration>
